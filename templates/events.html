@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 style="text-align:center; margin: 2rem 0;">Upcoming Tech Meetups</h2>
+<section class="events">
+  {% for event in events %}
+    <div class="event-card">
+      <h3>{{ event.topic }}</h3>
+      <p><span class="label">Speaker:</span> {{ event.speaker }}</p>
+      <p><span class="label">Date:</span> {{ event.date }} &nbsp; | &nbsp; <span class="label">Time:</span> {{ event.time }}</p>
+      <p><span class="label">Venue:</span> {{ event.venue }}</p>
+    </div>
+  {% else %}
+    <p>No upcoming events yet. Stay tuned.</p>
+  {% endfor %}
+</section>
+{% endblock %}
