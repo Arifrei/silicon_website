@@ -3,9 +3,9 @@
   --card-bg: rgba(255, 255, 255, 0.04);
   --primary: #1e90ff;
   --accent: #00ffd5;
-  --highlight: #ff6bcb;
+  --highlight: #00bcd4;
   --text: #e0e0e0;
-  --gradient: linear-gradient(135deg, #1e90ff, #ff6bcb);
+  --gradient: linear-gradient(135deg, #1e90ff 0%, #00bcd4 100%);
   --nav-bg: #12151d;
   --nav-hover: #1e90ff80;
   --glow: 0 0 15px rgba(30, 144, 255, 0.4);
@@ -84,7 +84,7 @@ button {
 
 button:hover {
   transform: scale(1.05);
-  background: linear-gradient(135deg, #ff6bcb, #1e90ff);
+  background: linear-gradient(135deg, #1e90ff, #0099aa);
   box-shadow: var(--glow);
 }
 
